@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS productdb;
+
+USE productdb;
+
+CREATE TABLE IF NOT EXISTS product (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DOUBLE NOT NULL,
+    quantity INT NOT NULL
+);
